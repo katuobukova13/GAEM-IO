@@ -1,2 +1,0 @@
-* * * * * cd /Users/ekaterina_obukhova/Documents/web/GAEM-IO && php artisan schedule:run >> 
-/dev/null 2>&1

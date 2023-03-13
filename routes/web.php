@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return (new App\Http\Controllers\WeatherCardController)->__invoke();
+    return (new App\Http\Controllers\Blade\WeatherCardController)->__invoke();
 });
