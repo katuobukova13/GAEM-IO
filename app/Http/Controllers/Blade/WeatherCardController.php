@@ -11,9 +11,10 @@ class WeatherCardController extends Controller
 
     /**
      * @param string $city
-     * @return void
+     * @return \Illuminate\Support\Collection
      */
-    public function getTemperatures(string $city) {
+    public function getTemperatures(string $city): \Illuminate\Support\Collection
+    {
         $cityWeather = Weather::where('city', '=', $city)->get()->sortBy('created_at')->pluck('temperature')->toArray();
 
         $currentTempId = array_key_last($cityWeather);
